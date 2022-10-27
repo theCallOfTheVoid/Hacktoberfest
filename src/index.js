@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./utils/PrivateRoute";
+import PathNotFound from "./pages/PathNotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,10 @@ root.render(
       <Route exact element={<PrivateRoute />}>
         <Route exact path="/" element={<App />} />
       </Route>
+
+      {/* <Route exact path="/login" element={<Login />} /> */}
+      <Route path="*" element={<PathNotFound />} />
+      <Route />
     </Routes>
   </BrowserRouter>
 );
