@@ -1,3 +1,5 @@
+The spinnoff site for hacktoberfest
+
 # Hacktoberfest
 
 What is Hacktoberfest?
